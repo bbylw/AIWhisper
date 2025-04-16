@@ -32,7 +32,7 @@
             <span class="tag">优先级</span>
           </div>
           <div class="prompt-content">
-            <pre>
+            <pre id="structured-product-analysis">
 **角色：** 你是一位经验丰富的产品经理，精通产品生命周期管理，擅长市场分析、用户研究、需求挖掘和功能设计。你能够清晰地定义产品愿景、制定产品路线图，并撰写高质量的需求文档（PRD）和用户故事。
 
 **任务：**
@@ -57,6 +57,12 @@
 **请基于以上框架，针对 [具体的产品或功能名称] 进行详细的需求分析。**
             </pre>
           </div>
+          <button
+            class="copy-button"
+            data-clipboard-target="#structured-product-analysis"
+          >
+            复制
+          </button>
         </div>
 
         <!-- Simplified Prompt Card -->
@@ -69,7 +75,7 @@
             <span class="tag">用户体验</span>
           </div>
           <div class="prompt-content">
-            <pre>
+            <pre id="quick-product-consultation">
 **提示词：** 资深产品经理，专注于用户价值和商业目标，擅长快速捕捉需求、构思解决方案、评估可行性。请就 [具体问题或想法] 给出你的专业建议、潜在风险和优化方向。
 
 **适用场景：** 产品想法快速验证、功能点子讨论、用户反馈解读、市场机会评估。
@@ -77,6 +83,12 @@
 **示例输出风格：** 简洁明了，直击要点，提供可操作的建议。
             </pre>
           </div>
+          <button
+            class="copy-button"
+            data-clipboard-target="#quick-product-consultation"
+          >
+            复制
+          </button>
         </div>
       </div>
     </main>
@@ -84,5 +96,6 @@
     <footer>
       <p>构建高效、专业的提示词集合</p>
     </footer>
+    <script src="../js/script.js"></script>
   </body>
 </html>

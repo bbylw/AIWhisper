@@ -31,7 +31,7 @@
             <span class="tag">健康建议</span>
           </div>
           <div class="prompt-content">
-            <pre>
+            <pre id="quick-medical-consultation">
 **提示词：** 资深内科医生，坚定遵循循证医学，基于最新研究证据提供诊断和治疗建议，耐心解答患者疑问，语言通俗易懂，注重科学与同理心结合。
 
 **适用场景：** 回答医疗问题、解释疾病机制、提供健康建议。
@@ -46,7 +46,7 @@
           </div>
           <button
             class="copy-button"
-            data-clipboard-text="资深内科医生，坚定遵循循证医学，基于最新研究证据提供诊断和治疗建议，耐心解答患者疑问，语言通俗易懂，注重科学与同理心结合。"
+            data-clipboard-target="#quick-medical-consultation"
           >
             复制
           </button>
@@ -62,7 +62,7 @@
             <span class="tag">多学科协作</span>
           </div>
           <div class="prompt-content">
-            <pre>
+            <pre id="clinical-decision-support">
 **角色：** 你是一位经验丰富、遵循循证医学理念的资深临床医生，擅长处理复杂病例。
 
 **背景：** 我正在处理一位 [年龄] 岁 [性别] 患者，其主要诊断为 [主要疾病]，但同时合并有 [合并症1]、[合并症2] 等多种情况，目前面临 [具体的临床困境，例如治疗效果不佳、出现新的并发症、多重用药冲突等]。患者的基本病史、体征和关键检查结果如下：[简要描述关键信息]。
@@ -89,7 +89,7 @@
           </div>
           <button
             class="copy-button"
-            data-clipboard-target=".prompt-card:nth-child(1) .prompt-content pre"
+            data-clipboard-target="#clinical-decision-support"
           >
             复制
           </button>
@@ -105,7 +105,7 @@
             <span class="tag">临床实践更新</span>
           </div>
           <div class="prompt-content">
-            <pre>
+            <pre id="research-interpretation">
 **角色：** 你是一位紧跟学科前沿、具备批判性思维的权威医生。
 
 **背景：** 我需要快速了解 [特定疾病领域，例如 2 型糖尿病] 在过去一年内的重要临床研究进展，特别是那些可能改变临床实践的高影响力研究（如发表在 NEJM, Lancet, JAMA 等顶级期刊上的 RCT 或大型观察性研究）。
@@ -130,7 +130,7 @@
           </div>
           <button
             class="copy-button"
-            data-clipboard-target=".prompt-card:nth-child(2) .prompt-content pre"
+            data-clipboard-target="#research-interpretation"
           >
             复制
           </button>
@@ -147,7 +147,7 @@
             <span class="tag">信息源筛选</span>
           </div>
           <div class="prompt-content">
-            <pre>
+            <pre id="evidence-based-analysis">
 **角色：** 你是一位严谨的医学研究者或临床医生，专注于基于高质量国际证据的循证医学分析。
 
 **背景：** 我需要对 [特定医学主题或临床问题] 进行深入的循证分析，以支持临床决策或研究。关键要求是，本次分析必须排除来自中国大陆地区的研究、数据和指南，仅依赖国际公认的高质量信息来源。
@@ -173,7 +173,7 @@
           </div>
           <button
             class="copy-button"
-            data-clipboard-target=".prompt-card:nth-child(3) .prompt-content pre"
+            data-clipboard-target="#evidence-based-analysis"
           >
             复制
           </button>

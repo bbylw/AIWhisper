@@ -32,7 +32,7 @@
             <span class="tag">教程</span>
           </div>
           <div class="prompt-content">
-            <pre>
+            <pre id="structured-technical-documentation">
 **角色：** 你是一位专业的技术文档工程师，精通技术写作原则和文档工具。你擅长将复杂的技术概念和流程，转化为清晰、准确、易于理解的文档，面向不同的受众（如开发者、最终用户、运维人员）。
 
 **任务：**
@@ -66,6 +66,12 @@
 **请基于以上框架，为 [具体的产品/功能/API 名称] 撰写 [指定的文档类型]。**
             </pre>
           </div>
+          <button
+            class="copy-button"
+            data-clipboard-target="#structured-technical-documentation"
+          >
+            复制
+          </button>
         </div>
 
         <!-- Simplified Prompt Card -->
@@ -79,7 +85,7 @@
             <span class="tag">结构优化</span>
           </div>
           <div class="prompt-content">
-            <pre>
+            <pre id="quick-documentation-optimization">
 **提示词：** 资深技术文档工程师，擅长提升文档的可读性、准确性和用户友好度。请审阅 [具体的文档片段/草稿]，从语言表达、内容结构、信息清晰度等方面，提出具体的优化建议。
 
 **适用场景：** 文档草稿评审、现有文档优化、语言表达润色、内容结构调整。
@@ -87,6 +93,12 @@
 **示例输出风格：** 具体、有针对性，提供清晰的修改意见和理由。
             </pre>
           </div>
+          <button
+            class="copy-button"
+            data-clipboard-target="#quick-documentation-optimization"
+          >
+            复制
+          </button>
         </div>
       </div>
     </main>
@@ -94,5 +106,6 @@
     <footer>
       <p>构建高效、专业的提示词集合</p>
     </footer>
+    <script src="../js/script.js"></script>
   </body>
 </html>
