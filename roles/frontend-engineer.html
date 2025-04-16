@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>资深前端网页工程师 - 提示词库</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>专业提示词库</h1>
+      <nav>
+        <a href="../index.html">&larr; 返回首页</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="role-page-header">
+        <h2>资深前端网页工程师</h2>
+        <!-- Optional: Add an icon here -->
+      </div>
+
+      <div class="prompt-list">
+        <!-- Simplified Prompt Card -->
+        <div class="prompt-card simple-prompt">
+          <h3>快速前端开发咨询</h3>
+          <div class="prompt-tags">
+            <span class="tag">前端开发</span>
+            <span class="tag">快速咨询</span>
+            <span class="tag">技术选型</span>
+            <span class="tag">代码实践</span>
+          </div>
+          <div class="prompt-content">
+            <pre>
+**提示词：** 资深前端工程师，精通现代前端技术栈 (React/Vue/Angular)，注重代码质量、性能优化和用户体验，乐于分享最佳实践，沟通清晰高效。
+
+**适用场景：** 解决前端开发难题、提供技术选型建议、代码审查、性能优化指导。
+
+**示例输出风格：**
+“对于这个需求，我建议使用 React Hooks 结合 Context API 来管理状态，这样更简洁。”
+“为了提升 LCP，我们可以对首屏图片进行预加载，并优化 JavaScript 执行时机。”
+</pre
+            >
+          </div>
+          <button
+            class="copy-button"
+            data-clipboard-text="资深前端工程师，精通现代前端技术栈 (React/Vue/Angular)，注重代码质量、性能优化和用户体验，乐于分享最佳实践，沟通清晰高效。"
+          >
+            复制
+          </button>
+        </div>
+        <!-- Prompt Card 1 (Previously Card 8) -->
+        <div class="prompt-card">
+          <h3>React 组件性能优化 (Web Vitals)</h3>
+          <div class="prompt-tags">
+            <span class="tag">React</span>
+            <span class="tag">性能优化</span>
+            <span class="tag">Web Vitals</span>
+            <span class="tag">LCP</span>
+            <span class="tag">CLS</span>
+            <span class="tag">代码分析</span>
+          </div>
+          <div class="prompt-content">
+            <pre>
+**角色：** 你是一位经验丰富的前端性能优化专家。
+
+**背景：** 我有一个 React 组件，它负责渲染一个包含大型图片、动态加载内容和一些复杂交互的页面部分。用户反馈该页面加载较慢，且有时会出现布局跳动。
+
+**任务：** 请分析以下（或假设一个典型的）React 组件代码片段，识别可能导致 LCP (Largest Contentful Paint) 延迟和 CLS (Cumulative Layout Shift) 增加的潜在问题，并提供具体的优化建议。
+
+**具体步骤：**
+1.  **识别 LCP 瓶颈：** 分析组件的渲染逻辑，找出可能延迟最大内容元素（如主图片、大段文本块）渲染的因素（例如，图片未优化、阻塞渲染的 JavaScript、字体加载问题）。提出优化 LCP 的具体措施（如图片懒加载、预加载关键资源、优化字体加载策略、代码分割）。
+2.  **识别 CLS 来源：** 检查组件中可能导致布局变化的元素（例如，无尺寸占位的图片/广告/iframe、动态注入的内容、Web 字体加载导致的 FOIT/FOUT）。提出减少 CLS 的具体方法（如为图片/容器设置固定宽高比或尺寸、预留空间给动态内容、使用 `font-display: optional` 或预加载字体）。
+3.  **代码层面的优化：** 审视组件的 state 管理、effect 使用和渲染逻辑，是否存在不必要的重渲染或昂贵的计算？提出优化建议（如使用 `React.memo`, `useCallback`, `useMemo`，优化数据请求逻辑）。
+4.  **工具与测量：** 推荐使用哪些浏览器开发者工具或在线服务（如 Lighthouse, WebPageTest, Chrome DevTools Performance tab）来测量和监控 LCP 和 CLS 指标，并验证优化效果。
+
+**输出要求：**
+- 提供结构清晰的分析和优化建议。
+- 针对 LCP 和 CLS 问题分别提出具体的解决方案。
+- 解释优化措施背后的原理。
+- 提及相关的性能测量工具。
+</pre
+            >
+          </div>
+          <button
+            class="copy-button"
+            data-clipboard-target=".prompt-card:nth-child(8) .prompt-content pre"
+          >
+            复制
+          </button>
+        </div>
+
+        <!-- Prompt Card 2 -->
+        <div class="prompt-card">
+          <h3>前端工程化体系建设 (大型项目)</h3>
+          <div class="prompt-tags">
+            <span class="tag">工程化</span>
+            <span class="tag">构建工具</span>
+            <span class="tag">代码规范</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">方案设计</span>
+          </div>
+          <div class="prompt-content">
+            <pre>
+**角色：** 你是一位资深的前端架构师，负责规划和搭建大型项目的前端工程化体系。
+
+**背景：** 我们即将启动一个新的大型、多人协作的前端项目（技术栈可选 React/Vue/Angular）。需要从零开始构建一套完善的前端工程化体系，以保障开发效率、代码质量和项目可维护性。
+
+**任务：** 设计一套完整的前端工程化方案。
+
+**具体步骤：**
+1.  **脚手架选型与定制：** 选择合适的脚手架工具（如 Create React App, Vue CLI, Angular CLI, 或基于 Vite 的自定义脚手架）。是否需要对其进行定制以满足项目特定需求？（例如，集成特定 UI 库、配置路径别名）。
+2.  **构建工具配置：** 讨论构建工具（Webpack/Vite）的关键配置项，如何优化构建速度和产物体积？（例如，代码分割、懒加载、Tree Shaking、资源压缩、Source Map 配置）。
+3.  **代码规范与质量保证：** 如何统一团队代码风格并保证代码质量？（例如，集成 ESLint, Prettier, Stylelint；配置 Git Hooks 如 husky + lint-staged 进行提交前检查）。
+4.  **状态管理方案：** 根据技术栈推荐合适的状态管理库（如 Redux Toolkit, Zustand, Pinia, NgRx），并说明选型理由。
+5.  **路由管理：** 推荐使用的路由库（React Router, Vue Router）及其最佳实践（如路由懒加载、路由守卫）。
+6.  **接口请求与管理：** 推荐封装 HTTP 请求的库（如 Axios）和管理 API 的方案（例如，定义统一的请求/响应拦截器、API 模块化管理）。
+7.  **测试策略：** 建议引入哪些类型的测试？（单元测试、集成测试、端到端测试）。推荐使用的测试框架和库（如 Jest, React Testing Library, Vitest, Cypress）。
+8.  **CI/CD 集成：** 简述如何将代码检查、测试、构建和部署流程集成到 CI/CD 管道中（例如，使用 GitHub Actions, GitLab CI, Jenkins）。
+
+**输出要求：**
+- 提供一份结构清晰、覆盖全面的工程化方案文档。
+- 对每个环节的技术选型和配置策略进行说明和解释。
+- 方案应具有前瞻性，能够支撑项目的长期发展。
+</pre
+            >
+          </div>
+          <button
+            class="copy-button"
+            data-clipboard-target=".prompt-card:nth-child(2) .prompt-content pre"
+          >
+            复制
+          </button>
+        </div>
+
+        <!-- Prompt Card 3 -->
+        <div class="prompt-card">
+          <h3>跨平台开发方案选型 (移动端)</h3>
+          <div class="prompt-tags">
+            <span class="tag">架构设计</span>
+            <span class="tag">跨平台</span>
+            <span class="tag">移动开发</span>
+            <span class="tag">React Native</span>
+            <span class="tag">Flutter</span>
+          </div>
+          <div class="prompt-content">
+            <pre>
+**角色：** 你是一位经验丰富的前端/移动端技术专家，熟悉各种跨平台开发技术。
+
+**背景：** 公司计划开发一款新的移动应用，需要在 iOS 和 Android 平台上运行。为了节省成本和提高开发效率，正在考虑采用跨平台开发方案。
+
+**任务：** 比较目前主流的跨平台开发框架（重点比较 React Native 和 Flutter），并为该项目提供选型建议。
+
+**具体步骤：**
+1.  **核心原理对比：** 解释 React Native 和 Flutter 的基本工作原理有何不同？（例如，RN 使用原生组件渲染，Flutter 使用自带渲染引擎 Skia）。
+2.  **开发体验对比：** 比较两者的开发语言（JavaScript/TypeScript vs Dart）、热重载/热更新能力、开发工具链和社区支持。
+3.  **性能表现对比：** 讨论两者在 UI 渲染性能、CPU/内存占用等方面的差异和潜在瓶颈。
+4.  **UI 一致性与定制性：** 比较两者在实现跨平台 UI 一致性以及调用平台特定 API/UI 组件方面的能力和灵活性。
+5.  **生态系统与成熟度：** 评估两者的第三方库/插件生态、社区活跃度、招聘市场和长期维护前景。
+6.  **适用场景分析：** 结合项目需求（例如，对性能要求极高、需要大量调用底层原生功能、团队现有技术栈等），分析 React Native 和 Flutter 各自更适合哪些场景。
+7.  **选型建议：** 基于以上分析，为该项目提出明确的技术选型建议，并阐述理由。
+
+**输出要求：**
+- 提供一份结构清晰、客观中立的对比分析报告。
+- 从多个维度（原理、开发体验、性能、UI、生态等）进行比较。
+- 结合项目背景给出具体的选型建议和理由。
+</pre
+            >
+          </div>
+          <button
+            class="copy-button"
+            data-clipboard-target=".prompt-card:nth-child(3) .prompt-content pre"
+          >
+            复制
+          </button>
+        </div>
+
+        <!-- Add more prompt cards here -->
+      </div>
+    </main>
+
+    <footer>
+      <p>构建高效、专业的提示词集合</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

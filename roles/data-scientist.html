@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>数据科学家 - 提示词库</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>专业提示词库</h1>
+      <nav>
+        <a href="../index.html">&larr; 返回首页</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="role-page-header">
+        <h2>数据科学家</h2>
+        <!-- Optional: Add an icon here -->
+      </div>
+
+      <div class="prompt-list">
+        <!-- Simplified Prompt Card -->
+        <div class="prompt-card simple-prompt">
+          <h3>快速数据分析咨询</h3>
+          <div class="prompt-tags">
+            <span class="tag">数据分析</span>
+            <span class="tag">快速咨询</span>
+            <span class="tag">机器学习</span>
+            <span class="tag">数据可视化</span>
+          </div>
+          <div class="prompt-content">
+            <pre>
+**提示词：** 冷静客观的数据分析师，精通数据挖掘和可视化，擅长从复杂数据中提炼清晰洞察，提供基于事实的决策建议，语言简洁精准，善于用图表解释复杂概念。
+
+**适用场景：** 分析数据趋势、解释统计结果、提供业务优化建议、机器学习模型选择。
+
+**示例输出风格：**
+“从数据来看，销售额下降与促销活动时间点有关，我建议调整至下季度初。”
+“这个趋势图显示了用户流失率的变化，原因可能与新功能上线有关。”
+</pre
+            >
+          </div>
+          <button
+            class="copy-button"
+            data-clipboard-text="冷静客观的数据分析师，精通数据挖掘和可视化，擅长从复杂数据中提炼清晰洞察，提供基于事实的决策建议，语言简洁精准，善于用图表解释复杂概念。"
+          >
+            复制
+          </button>
+        </div>
+        <!-- Prompt Card 1 (Previously Card 8) -->
+        <div class="prompt-card">
+          <h3>时间序列预测 (销售额)</h3>
+          <div class="prompt-tags">
+            <span class="tag">时间序列</span>
+            <span class="tag">预测</span>
+            <span class="tag">ARIMA</span>
+            <span class="tag">Prophet</span>
+            <span class="tag">Python</span>
+            <span class="tag">模型选择</span>
+          </div>
+          <div class="prompt-content">
+            <pre>
+**角色：** 你是一位擅长时间序列分析和预测的数据科学家。
+
+**背景：** 我有一份包含过去三年每日销售额的数据集（CSV 文件，包含 'date' 和 'sales' 两列）。'date' 列是日期格式（例如 'YYYY-MM-DD'），'sales' 列是数值。
+
+**任务：** 请为预测未来 30 天的每日销售额提供一个详细的分析和建模方案。
+
+**具体步骤：**
+1.  **数据加载与预处理：** 描述如何使用 Pandas 加载数据，并将 'date' 列设置为索引，确保时间序列的连续性（处理缺失日期，如果需要）。
+2.  **探索性数据分析 (EDA)：** 建议进行哪些可视化分析来理解销售数据？（例如，时间序列图、季节性分解图、自相关图 ACF 和偏自相关图 PACF）。这些分析如何帮助识别趋势、季节性和周期性？
+3.  **模型选择：** 讨论至少两种常用的时间序列预测模型（例如 ARIMA/SARIMA 和 Facebook Prophet）。简要说明它们各自的原理、优点、缺点以及适用于此场景的原因。
+4.  **建模与评估：** 概述使用其中一种模型（例如 Prophet）进行建模的基本流程，包括数据划分（训练集/测试集）、模型训练、预测和评估（选择合适的评估指标，如 MAE, RMSE, MAPE）。
+5.  **结果解释与部署考量：** 如何解释预测结果？在将模型部署到实际应用中时，需要考虑哪些因素（例如，模型的定期重新训练、监控预测性能）？
+
+**输出要求：**
+- 提供一个结构清晰、步骤明确的分析方案。
+- 对每个步骤的关键概念和技术进行解释。
+- 重点在于方法论和思考过程，而非具体的代码实现（但可以提及关键库，如 pandas, statsmodels, prophet）。
+</pre
+            >
+          </div>
+          <button
+            class="copy-button"
+            data-clipboard-target=".prompt-card:nth-child(1) .prompt-content pre"
+          >
+            复制
+          </button>
+        </div>
+
+        <!-- Prompt Card 2 -->
+        <div class="prompt-card">
+          <h3>机器学习模型选择与评估 (分类问题)</h3>
+          <div class="prompt-tags">
+            <span class="tag">机器学习</span>
+            <span class="tag">模型选择</span>
+            <span class="tag">模型评估</span>
+            <span class="tag">分类</span>
+            <span class="tag">Scikit-learn</span>
+          </div>
+          <div class="prompt-content">
+            <pre>
+**角色：** 你是一位经验丰富的数据科学家，精通各种机器学习算法及其评估方法。
+
+**背景：** 我有一个二分类问题的数据集（已完成数据清洗和特征工程），目标是预测客户是否会流失 (Churn)。特征包括客户的人口统计信息、服务使用情况和历史互动记录。
+
+**任务：** 请为这个问题设计一个机器学习模型选择和评估的方案。
+
+**具体步骤：**
+1.  **模型选择：** 推荐至少三种适合此二分类问题的候选模型（例如，逻辑回归、支持向量机(SVM)、随机森林、梯度提升树(如 XGBoost, LightGBM)）。简要说明选择这些模型的理由以及它们各自的优缺点。
+2.  **数据划分：** 描述如何将数据集划分为训练集、验证集和测试集，并解释这样做的原因（例如，使用 `train_test_split`，考虑分层抽样）。
+3.  **模型训练与调优：** 概述如何使用训练集训练候选模型。对于需要调优超参数的模型（如 SVM, 随机森林），推荐使用哪种方法进行超参数搜索？（例如，网格搜索 Grid Search, 随机搜索 Randomized Search，结合交叉验证 Cross-Validation）。
+4.  **模型评估指标：** 针对客户流失预测场景，选择哪些评估指标最为关键？（例如，准确率 Accuracy, 精确率 Precision, 召回率 Recall, F1-Score, AUC-ROC）。解释为什么这些指标重要，以及如何在不平衡数据集上正确解读它们。
+5.  **模型比较与选择：** 如何使用验证集上的评估指标来比较不同模型（以及同一模型的不同超参数组合）的性能，并最终选择最佳模型？
+6.  **最终评估：** 描述如何使用测试集对最终选定的模型进行一次性评估，以获得模型在未见过数据上的泛化性能估计。
+
+**输出要求：**
+- 提供一个结构清晰、逻辑严谨的方案。
+- 对模型选择、评估指标和调优方法进行解释。
+- 强调在实际业务场景中选择和评估模型的关键考量。
+- 可以提及关键的 Scikit-learn 函数或类。
+</pre
+            >
+          </div>
+          <button
+            class="copy-button"
+            data-clipboard-target=".prompt-card:nth-child(2) .prompt-content pre"
+          >
+            复制
+          </button>
+        </div>
+
+        <!-- Prompt Card 3 -->
+        <div class="prompt-card">
+          <h3>数据可视化方案设计 (用户行为分析)</h3>
+          <div class="prompt-tags">
+            <span class="tag">数据可视化</span>
+            <span class="tag">图表选择</span>
+            <span class="tag">用户行为</span>
+            <span class="tag">Python</span>
+            <span class="tag">Matplotlib</span>
+            <span class="tag">Seaborn</span>
+          </div>
+          <div class="prompt-content">
+            <pre>
+**角色：** 你是一位擅长通过数据可视化洞察业务的数据科学家。
+
+**背景：** 我有一份包含用户在一个月内的网站访问日志数据，字段包括 `user_id`, `timestamp`, `page_visited`, `session_duration` (秒), `device_type` ('mobile', 'desktop'), `referrer` (来源渠道)。
+
+**任务：** 设计一套数据可视化方案，以探索和展示用户行为模式。
+
+**具体步骤：**
+1.  **核心指标可视化：** 推荐使用哪些图表来展示核心运营指标？
+    *   每日/每周活跃用户数 (DAU/WAU) 的趋势？（例如，折线图）
+    *   不同设备类型的用户分布？（例如，饼图或条形图）
+    *   主要流量来源渠道的分布？（例如，条形图）
+2.  **用户访问路径分析：** 如何可视化典型的用户访问路径或页面之间的跳转关系？（例如，桑基图 Sankey Diagram，或弦图 Chord Diagram - 如果工具支持）。
+3.  **用户会话时长分析：** 推荐使用什么图表来展示用户会话时长的分布？（例如，直方图 Histogram，核密度估计图 KDE Plot）。如何识别异常的会话时长？
+4.  **页面访问分析：** 如何展示不同页面的访问量排名？（例如，水平条形图）。如何可视化特定关键页面的访问量随时间的变化？（例如，折线图）。
+5.  **用户分群可视化（可选）：** 如果对用户进行了分群（例如，高价值用户 vs 低价值用户），如何通过可视化比较不同群组的行为差异？（例如，分组条形图比较平均会话时长，堆叠条形图比较设备分布）。
+6.  **工具选择：** 推荐使用哪些 Python 库（如 Matplotlib, Seaborn, Plotly）来实现这些可视化？各自的优势是什么？
+
+**输出要求：**
+- 为每个分析目标推荐具体的图表类型，并简要说明原因。
+- 考虑数据的特性（时间序列、分类、数值）来选择合适的图表。
+- 方案应具有逻辑性，能够从不同维度揭示用户行为。
+- 提及实现这些可视化的常用 Python 库。
+</pre
+            >
+          </div>
+          <button
+            class="copy-button"
+            data-clipboard-target=".prompt-card:nth-child(3) .prompt-content pre"
+          >
+            复制
+          </button>
+        </div>
+
+        <!-- Add more prompt cards here -->
+      </div>
+    </main>
+
+    <footer>
+      <p>构建高效、专业的提示词集合</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

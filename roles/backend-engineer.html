@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>后端工程师 - 提示词库</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>专业提示词库</h1>
+      <nav>
+        <a href="../index.html">&larr; 返回首页</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="role-page-header">
+        <h2>后端工程师</h2>
+        <!-- Optional: Add an icon here -->
+      </div>
+
+      <div class="prompt-list">
+        <!-- Simplified Prompt Card -->
+        <div class="prompt-card simple-prompt">
+          <h3>快速后端开发咨询</h3>
+          <div class="prompt-tags">
+            <span class="tag">后端开发</span>
+            <span class="tag">快速咨询</span>
+            <span class="tag">架构设计</span>
+            <span class="tag">API 设计</span>
+            <span class="tag">数据库</span>
+          </div>
+          <div class="prompt-content">
+            <pre>
+**提示词：** 资深后端工程师，精通主流后端技术和架构 (如 Java/Go/Node.js, 微服务, 分布式系统)，注重系统稳定性、可扩展性和安全性，擅长解决复杂技术难题，沟通直接高效。
+
+**适用场景：** 后端技术选型、架构设计评审、API 设计指导、性能瓶颈分析、数据库优化建议。
+
+**示例输出风格：**
+“针对这个高并发场景，我建议引入消息队列进行异步处理，并使用 Redis 缓存热点数据。”
+“设计 RESTful API 时，请遵循幂等性原则，并为关键操作添加适当的事务控制。”
+</pre
+            >
+          </div>
+          <button
+            class="copy-button"
+            data-clipboard-text="资深后端工程师，精通主流后端技术和架构 (如 Java/Go/Node.js, 微服务, 分布式系统)，注重系统稳定性、可扩展性和安全性，擅长解决复杂技术难题，沟通直接高效。"
+          >
+            复制
+          </button>
+        </div>
+        <!-- Prompt Card 1 (Previously Card 8) -->
+        <div class="prompt-card">
+          <h3>RESTful API 设计 (博客文章管理)</h3>
+          <div class="prompt-tags">
+            <span class="tag">API 设计</span>
+            <span class="tag">RESTful</span>
+            <span class="tag">CRUD</span>
+            <span class="tag">后端开发</span>
+            <span class="tag">方案设计</span>
+          </div>
+          <div class="prompt-content">
+            <pre>
+**角色：** 你是一位负责设计和实现健壮 API 的后端工程师。
+
+**背景：** 我们正在开发一个博客平台，需要一套 RESTful API 来管理博客文章 (Posts)。每篇文章包含标题 (title)、内容 (content)、作者 ID (authorId) 和发布状态 (published: boolean)。
+
+**任务：** 设计一套完整的 RESTful API 端点，用于对博客文章执行 CRUD (创建、读取、更新、删除) 操作。
+
+**具体步骤：**
+1.  **端点定义：** 清晰列出每个 CRUD 操作所需的 HTTP 方法 (POST, GET, PUT/PATCH, DELETE) 和具体的 URL 路径（例如 `/api/v1/posts`, `/api/v1/posts/{postId}`）。
+2.  **请求体结构：** 为创建 (POST) 和更新 (PUT/PATCH) 操作定义请求体（Request Body）的 JSON 结构和字段说明（例如，创建需要 `title`, `content`, `authorId`；更新可能只需要部分字段）。指明字段类型和是否必需。
+3.  **成功响应体结构：** 为每个操作定义成功时的响应体（Response Body）的 JSON 结构。例如，创建成功返回新创建的文章对象；获取单篇文章返回文章对象；获取列表返回包含文章对象的数组；更新/删除成功可返回 204 No Content 或确认信息。
+4.  **状态码与错误处理：** 指明关键的 HTTP 状态码及其对应的场景（例如，201 Created, 200 OK, 204 No Content, 400 Bad Request - 输入无效, 404 Not Found - 文章不存在, 403 Forbidden - 无权限操作）。
+5.  **查询参数（可选）：** 考虑为获取文章列表 (GET `/api/v1/posts`) 端点添加查询参数以支持分页（例如 `page`, `limit`）和过滤（例如 `authorId`, `published`）。
+
+**输出要求：**
+- 以清晰、结构化的方式（如 Markdown 列表或表格）描述 API 设计。
+- 确保包含所有要求点，并对设计选择做出简要说明（如果适用）。
+</pre
+            >
+          </div>
+          <button
+            class="copy-button"
+            data-clipboard-target=".prompt-card:nth-child(8) .prompt-content pre"
+          >
+            复制
+          </button>
+        </div>
+
+        <!-- Prompt Card 2 -->
+        <div class="prompt-card">
+          <h3>数据库 Schema 设计与优化 (电商平台)</h3>
+          <div class="prompt-tags">
+            <span class="tag">数据库</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Schema 设计</span>
+            <span class="tag">性能优化</span>
+            <span class="tag">电商</span>
+          </div>
+          <div class="prompt-content">
+            <pre>
+**角色：** 你是一位经验丰富的后端工程师，专长于数据库设计和优化。
+
+**背景：** 我们正在为一个新的电商平台设计数据库 Schema。核心实体包括用户 (Users)、商品 (Products)、订单 (Orders) 和订单项 (OrderItems)。
+
+**任务：** 设计核心表的 SQL Schema (例如使用 PostgreSQL 语法)，并考虑性能优化策略。
+
+**具体步骤：**
+1.  **表结构设计：** 为 Users, Products, Orders, OrderItems 设计表结构，包括必要的字段、数据类型（如 VARCHAR, INT, DECIMAL, TIMESTAMP, BOOLEAN）和约束（如 PRIMARY KEY, FOREIGN KEY, NOT NULL, UNIQUE）。考虑用户地址、商品分类、订单状态等关联信息。
+2.  **关系定义：** 明确表之间的关系（一对一、一对多、多对多），并使用外键约束来维护数据完整性。例如，一个订单可以包含多个订单项，一个商品可以出现在多个订单项中。
+3.  **索引策略：** 针对常见的查询场景（例如，根据用户 ID 查询订单、根据商品 ID 查询库存、根据订单状态查询订单），建议添加哪些索引（如 B-tree 索引）来提高查询性能？解释为什么选择这些索引。
+4.  **性能考量：** 讨论在高并发读写场景下，可能需要考虑的其他数据库优化策略（例如，读写分离、分库分表、使用缓存如 Redis）。
+5.  **数据类型选择：** 解释为什么为特定字段选择特定的数据类型（例如，为什么用 DECIMAL 而不是 FLOAT 存储金额）。
+
+**输出要求：**
+- 提供核心表的 SQL DDL (Data Definition Language) 语句。
+- 清晰列出建议的索引及其原因。
+- 结构化地讨论性能优化策略。
+- 解释关键字段的数据类型选择依据。
+</pre
+            >
+          </div>
+          <button
+            class="copy-button"
+            data-clipboard-target=".prompt-card:nth-child(2) .prompt-content pre"
+          >
+            复制
+          </button>
+        </div>
+
+        <!-- Prompt Card 3 -->
+        <div class="prompt-card">
+          <h3>系统架构设计 (高并发秒杀系统)</h3>
+          <div class="prompt-tags">
+            <span class="tag">系统架构</span>
+            <span class="tag">高并发</span>
+            <span class="tag">分布式系统</span>
+            <span class="tag">缓存</span>
+            <span class="tag">消息队列</span>
+          </div>
+          <div class="prompt-content">
+            <pre>
+**角色：** 你是一位资深的系统架构师，擅长设计高并发、高可用的分布式系统。
+
+**背景：** 我们需要设计一个能够支撑瞬时高并发请求的商品秒杀系统。
+
+**任务：** 提出一个高并发秒杀系统的核心架构设计方案，重点关注如何应对流量洪峰、保证数据一致性以及提高系统可用性。
+
+**具体步骤：**
+1.  **流量削峰：** 描述如何在不同层面进行流量控制和削峰？（例如，前端限流、Nginx/网关层限流、验证码、请求队列）。
+2.  **缓存应用：** 如何利用缓存（如 Redis）来减轻数据库压力？哪些数据适合放入缓存？（例如，商品信息、库存数量）。讨论缓存策略（如读/写缓存模式）和缓存一致性问题。
+3.  **库存扣减方案：** 讨论常见的库存扣减方案及其优缺点（例如，下单减库存、支付减库存、预扣库存）。如何在高并发下保证库存数据的一致性？（例如，使用 Redis 原子操作、数据库乐观锁/悲观锁）。
+4.  **异步处理：** 如何利用消息队列（如 Kafka, RabbitMQ）将非核心流程（如下单后的订单创建、支付通知、物流信息更新）异步化处理，以提高核心秒杀流程的性能和响应速度？
+5.  **数据库优化：** 除了缓存，还有哪些针对数据库层面的优化措施可以考虑？（例如，读写分离、分库分表、优化 SQL 查询）。
+6.  **系统可用性：** 如何设计系统以提高可用性？（例如，服务冗余、负载均衡、熔断降级）。
+
+**输出要求：**
+- 提供一个清晰的系统架构图（可以用文字描述关键组件和交互流程）。
+- 结构化地阐述各个关键技术点的设计思路和选型理由。
+- 重点突出高并发场景下的应对策略。
+</pre
+            >
+          </div>
+          <button
+            class="copy-button"
+            data-clipboard-target=".prompt-card:nth-child(3) .prompt-content pre"
+          >
+            复制
+          </button>
+        </div>
+
+        <!-- Add more prompt cards here -->
+      </div>
+    </main>
+
+    <footer>
+      <p>构建高效、专业的提示词集合</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
